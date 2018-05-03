@@ -48,11 +48,11 @@ class App extends Component {
         <Person
         name={this.state.person[0].name}
         age={this.state.person[0].age}
-        click={this.switchNameHandler.bind(this, "BAY!!!!")} />
+        click={this.switchNameHandler.bind(this, "BAY!!!!")} /> // change name when clicked
         <Person
         name={this.state.person[1].name}
         age={this.state.person[1].age}
-        changed={this.nameChangeHandler}/>
+        changed={this.nameChangeHandler}/> // change name to new input value
         <Person
         name={this.state.person[2].name}
         age={this.state.person[2].age}>My Hobbies: Playing with toys</Person>
