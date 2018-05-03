@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './Person/Person.css'
 import Person from './Person/Person';
 
 class App extends Component {
@@ -14,7 +15,7 @@ class App extends Component {
 
     otherState: 'some other value'
   }
-
+  // change name when clicked
   switchNameHandler = (newName) => {
     //console.log('Was clicked!');
     //DON'T DO THIS: this.state.persons[0].name = 'Rachada';
@@ -28,6 +29,7 @@ class App extends Component {
     })
   }
 
+  // change name to new input value
   nameChangeHandler = (event) => {
     this.setState( {
       person: [
@@ -48,11 +50,11 @@ class App extends Component {
         <Person
         name={this.state.person[0].name}
         age={this.state.person[0].age}
-        click={this.switchNameHandler.bind(this, "BAY!!!!")} /> // change name when clicked
+        click={this.switchNameHandler.bind(this, "BAY!!!!")} />
         <Person
         name={this.state.person[1].name}
         age={this.state.person[1].age}
-        changed={this.nameChangeHandler}/> // change name to new input value
+        changed={this.nameChangeHandler}/>
         <Person
         name={this.state.person[2].name}
         age={this.state.person[2].age}>My Hobbies: Playing with toys</Person>
