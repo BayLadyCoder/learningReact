@@ -50,7 +50,6 @@ class App extends Component {
       fontWeight: 'bold'
     };
 
-
     return (
       <div className="App">
         <h1>Hi! This is my first React App</h1>
