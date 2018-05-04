@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+const API_KEY = 'AIzaSyDP7Y7wKSkXSYKViq3qgOfC1TZLbq-guWI';
+
 //Create a new component. This component should produce some HTML
 
 const App = () => {
